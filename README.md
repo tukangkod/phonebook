@@ -26,6 +26,5 @@
     ```
 4. Open in browser 
     ```console
-    foo@bar:~$ open http://cake.local/
+    foo@bar:~$ open http://phonebook.local/
     ```
-
