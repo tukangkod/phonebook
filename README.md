@@ -1,12 +1,14 @@
 # PhoneBook
+A time box implementation of phonebook using some of technology. 
 
 ## Pre-requisite
 * docker compose ([install guide](https://docs.docker.com/compose/install/))
 * composer ([install guide](https://getcomposer.org/doc/00-intro.md))
 * port 80 & 3306 not used
-* phonebook.local mapped to 127.0.0.1
+* phonebook.local mapped to 127.0.0.1 at host file
 
-## Step
+## How to deploy
+Please follow this steps in order.
 1. Create folder and clone:
     ```console
     foo@bar:~$ git clone --recursive git@github.com:tukangkod/phonebook.git
@@ -43,3 +45,11 @@
     ```console
     foo@bar:~$ docker-composer down
     ```
+## Technology used
+* Docker (docker-compose, ver 3)
+* Nginx
+* PHP 7.2 (php-fpm)
+* MariaDB (MySQL)
+* Cakephp 3
+* mdBootstrap with Material Design
+* ...
