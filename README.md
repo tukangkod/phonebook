@@ -2,14 +2,19 @@
 
 ## Pre-requisite
 * docker compose ([install guide](https://docs.docker.com/compose/install/))
+* composer ([install guide](https://getcomposer.org/doc/00-intro.md))
 * port 80 & 3306 not used
 * phonebook.local mapped to 127.0.0.1
 
 ## Step
 1. Create folder and clone:
     ```console
-    foo@bar:~$ mkdir phonebook && cd phonebook
-    foo@bar:~$ git clone git@github.com:tukangkod/phonebook.git
+    foo@bar:~$ git clone --recursive git@github.com:tukangkod/phonebook.git
+    foo@bar:~$ cd phonebook
+    # by this time you will see at least three folder:
+    #   - cakedock
+    #   - phonebook
+    #   - public
     ```
 2. Compose Install
     ```console
