@@ -32,6 +32,7 @@
 4. Migrate and seed
     ```console
     foo@bar:~$ docker-compose exec --user=cakedock workspace sh
+    /var/www $ cd phonebook
     /var/www $ bin/cake install
     ```
 5. Open in browser 

@@ -63,7 +63,7 @@ class InitialSeed extends AbstractSeed
 
         $data = [
             [
-                'id'            => '22d5a76f-5418-11e8-a5d9-0242ac130002',
+                'id'            => 'c1a396a1-556c-11e8-b10b-0242ac130003',
                 'contact_id'    => '2cf8d460-4c57-489a-bb74-b7ab4164152a',
                 'number'        => '7704789276',
                 'phone_type_id' => '22d5a76f-5418-11e8-a5d9-0242ac130002',
