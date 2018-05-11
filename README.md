@@ -33,3 +33,7 @@
     ```console
     foo@bar:~$ open http://phonebook.local/
     ```
+6. Stop Docker (need ot run inside cakedock folder)
+    ```console
+    foo@bar:~$ docker-composer down
+    ```
