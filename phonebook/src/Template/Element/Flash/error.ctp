@@ -2,5 +2,5 @@
 if (!isset($params['escape']) || $params['escape'] !== false) {
     $message = h($message);
 }
-?>
-<div class="message error" onclick="this.classList.add('hidden');"><?= $message ?></div>
+$title = __("Error");
+$this->Html->scriptBlock("$(document).ready(() => toastr.error('{$message}', '{$title}'));", ['block' => true]);

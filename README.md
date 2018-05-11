@@ -24,7 +24,12 @@
     foo@bar:~$ cp ../cake.conf.example cakedock/nginx/sites/cake.conf
     foo@bar:~$ docker-compose up -d --build
     ```
-4. Open in browser 
+4. Migrate and seed
+    ```console
+    foo@bar:~$ docker-compose exec --user=cakedock workspace sh
+    /var/www $ bin/cake install
+    ```
+5. Open in browser 
     ```console
     foo@bar:~$ open http://phonebook.local/
     ```

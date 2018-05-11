@@ -45,19 +45,20 @@ use Cake\Routing\Route\DashedRoute;
  *
  */
 Router::defaultRouteClass(DashedRoute::class);
+Router::extensions(['json', 'ajax']);
 
 Router::scope('/', function (RouteBuilder $routes) {
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file
-     * to use (in this case, src/Template/Pages/home.ctp)...
+     * to use (in this case, src/Template/Pages/contact.ctp)...
      */
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+    $routes->connect('/', ['controller' => 'Pages', 'action' => 'contact']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
-    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
+    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'contact']);
 
     /**
      * Connect catchall routes for all controllers.
@@ -76,6 +77,17 @@ Router::scope('/', function (RouteBuilder $routes) {
      * routes you want in your application.
      */
     $routes->fallbacks(DashedRoute::class);
+});
+
+/**
+ * admin route
+ */
+//RouteBuilder::setExtensions(['json', 'xml']);
+Router::prefix('admin', function ($routes) {
+    $routes->connect('/', ['controller' => 'Contacts', 'action' => 'index']);
+    $routes->setExtensions(['json', 'xml']);
+
+    $routes->fallbacks('DashedRoute');
 });
 
 /**

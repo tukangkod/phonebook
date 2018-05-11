@@ -1,0 +1,106 @@
+
+html,
+body,
+header,
+.carousel {
+    height: 60vh;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .carousel {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    header,
+    .carousel {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #929FBA!important;
+    }
+}
+
+#banner {
+    background-image: url('/img/residential-banner.jpg'); background-repeat: no-repeat; background-size: cover;
+}
+
+.table-wrapper {
+    display: block;
+    max-height: 500px;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.blue-gradient {
+    background: -webkit-linear-gradient(50deg,#45cafc,#303f9f)!important;
+    background: inear-gradient(40deg,#45cafc,#303f9f)!important;
+}
+.z-depth-2 {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+}
+.btn-rounded {
+    -webkit-border-radius: 10em;
+    border-radius: 10em;
+}
+.card.card-cascade.narrower .view {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: -1.25rem;
+}
+.card.card-cascade .view.gradient-card-header {
+    padding: 1.6rem 1rem;
+    text-align: center;
+    color: #fff!important;
+}
+.card.card-cascade .view {
+    -webkit-box-shadow:0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    -webkit-border-radius: .25rem;
+    border-radius: .25rem;
+}
+
+.btn-floating {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    width: 47px;
+    height: 47px;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+.btn-floating i {
+    display: inline-block;
+    width: inherit;
+    text-align: center;
+    color: #fff;
+}
+
+.btn-floating.btn-sm i {
+    font-size: .96154rem;
+    line-height: 36.15385px;
+}
+
+.btn-floating.btn-sm {
+    width: 36.15385px;
+    height: 36.15385px;
+}

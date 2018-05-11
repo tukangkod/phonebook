@@ -208,6 +208,10 @@ Type::build('timestamp')
  *
  */
 
+Plugin::load('CakeDC/Users', ['routes' => true, 'bootstrap' => true]);
+Plugin::load('FontAwesome');
+Plugin::load('Muffin/Trash');
+
 /*
  * Only try to load DebugKit in development mode
  * Debug Kit should not be installed on a production system
